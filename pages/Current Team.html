@@ -26,12 +26,46 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major" style="color: #00204e">Our Current Team</h1>
-							<p>Meet the dedicated individuals behind TRUNK, each contributing their unique skills and passion to make our journal a success. From editorial roles to design and outreach, our team works collaboratively to highlight the achievements of undergraduate STEM students at the University of Toronto.</p>
-							<ul>
-								<li><strong>Chair:</strong> Aviraj Newatia (Director/VP Academic Affairs, Computer Science Student Union 2024-2025) </li>
-								<li><strong>Vice-Chair:</strong> Marty Hewitt (VP Academic Affairs, Physics Student Union 2024-2025) </li>
-								<li><strong>Committee Members:</strong> Melanie Szpigiel (VP External Affairs, Astronomy Student Union 2024-2025), Ishan Malhotra (VP Academics, Mathematics Union 2024-2025), Christopher Au (Social Coordinator, Chemistry Student Union) </li>
-							</ul>
+							<p>Meet the dedicated individuals behind TRUNK, each contributing their unique skills and passion to make our journal a success. Our team works collaboratively to highlight the achievements of undergraduate STEM students at the University of Toronto.</p>
+							<div class="team-grid">
+								<div class="team-member">
+									<img class="team-headshot" src="../images/headshots/Avi.jpg" alt="Aviraj Newatia headshot" />
+									<strong>Aviraj Newatia</strong>
+									<div class="team-role">Chair</div>
+									<div class="team-desc">Director/VP Academic Affairs, Computer Science Student Union 2024-2025</div>
+								</div>
+								<div class="team-member">
+									<img class="team-headshot" src="../images/headshots/Marty.png" alt="Marty Hewitt headshot" />
+									<strong>Marty Hewitt</strong>
+									<div class="team-role">Vice-Chair</div>
+									<div class="team-desc">VP Academic Affairs, Physics Student Union 2024-2025</div>
+								</div>
+								<div class="team-member">
+									<img class="team-headshot" src="../images/headshots/Melanie.png" alt="Melanie Szpigiel headshot" />
+									<strong>Melanie Szpigiel</strong>
+									<div class="team-role">Committee Member</div>
+									<div class="team-desc">VP External Affairs, Astronomy Student Union 2024-2025</div>
+								</div>
+								<div class="team-member">
+									<img class="team-headshot" src="../images/headshots/.png" alt="Ishan Malhotra headshot" />
+									<strong>Ishan Malhotra</strong>
+									<div class="team-role">Committee Member</div>
+									<div class="team-desc">VP Academics, Mathematics Union 2024-2025</div>
+								</div>
+								<div class="team-member">
+									<img class="team-headshot" src="../images/headshots/.png" alt="Christopher Au headshot" />
+									<strong>Christopher Au</strong>
+									<div class="team-role">Committee Member</div>
+									<div class="team-desc">Social Coordinator, Chemistry Student Union</div>
+								</div>
+							</div>
+							<div class="union-logos">
+								<img src="../images/union_logos/cssu-logo-jost-semibold.svg" alt="Computer Science Student Union Logo" />
+								<img src="../images/union_logos/physu_logo.png" alt="Physics Student Union Logo" />
+								<img src="../images/union_logos/asu_logo.jpg" alt="Astronomy Student Union Logo" />
+								<img src="../images/union_logos/mu_logo.png" alt="Mathematics Union Logo" />
+								<img src="../images/union_logos/CSU_logo.jpg" alt="Chemistry Student Union Logo" />
+							</div>
 						</div>
 					</section>
 
@@ -57,3 +91,79 @@
 
 	</body>
 </html>
+
+<style>
+	.union-logos {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 32px;
+		margin: 48px 0 0 0;
+		flex-wrap: wrap;
+	}
+	.union-logos img {
+		height: 56px;
+		width: auto;
+		border-radius: 8px;
+		background: #fff;
+		box-shadow: 0 1px 4px rgba(23,74,124,0.08);
+		padding: 6px;
+		object-fit: contain;
+	}
+	@media (max-width: 700px) {
+		.union-logos {
+			gap: 16px;
+		}
+		.union-logos img {
+			height: 40px;
+			padding: 4px;
+		}
+	}
+
+	.team-grid {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px;
+		justify-content: center;
+		margin-top: 32px;
+	}
+	.team-member {
+		background: #fff;
+		border-radius: 10px;
+		box-shadow: 0 2px 8px rgba(0,32,78,0.07);
+		padding: 20px 16px;
+		width: 220px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.team-headshot {
+		width: 96px;
+		height: 96px;
+		border-radius: 50%;
+		background: #e6f0fa;
+		object-fit: cover;
+		margin-bottom: 16px;
+		border: 2px solid #b3d1ea;
+	}
+	.team-member strong {
+		color: #174a7c;
+		font-size: 1.1em;
+	}
+	.team-role {
+		color: #555;
+		font-size: 0.98em;
+		margin-bottom: 6px;
+		text-align: center;
+	}
+	@media (max-width: 700px) {
+		.team-grid {
+			flex-direction: column;
+			align-items: center;
+			gap: 20px;
+		}
+		.team-member {
+			width: 90%;
+		}
+	}
+</style>
